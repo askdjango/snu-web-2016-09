@@ -16,7 +16,7 @@ def main():
 
     result_list = sorted(result_dict.items(), key=key_fn, reverse=True)
 
-    with open('exam5.csv', 'wt', encoding='cp949') as f:
+    with open('exam5.csv', 'wt', encoding='cp949', newline='\n') as f:
         writer = csv.writer(f)
         writer.writerow(['랭크', '1의자릿수', '그룹 내 숫자 갯수',
             '그룹 내 제일큰수', '그룹 내 다음 큰수', '그룹 내 그 다음 큰수'])
